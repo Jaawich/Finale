@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Pants - YourOutlet</title>
-
-  <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/hero.css">
-  <link rel="stylesheet" href="../css/products.css">
-  <link rel="stylesheet" href="../css/cart.css">
-  <link rel="stylesheet" href="../css/modal.css">
-  <link rel="stylesheet" href="../css/search.css">
-  <link rel="stylesheet" href="../css/waves.css">
-  <link rel="stylesheet" href="../css/animation.css">
-  <link rel="stylesheet" href="../css/misc.css">
-<link rel="stylesheet" href="../css/footer.css">
+  <title>Shoes - YourOutlet</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/products.css">
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/modal.css">
+<link rel="stylesheet" href="css/search.css">
+<link rel="stylesheet" href="css/waves.css">
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/misc.css"> <!-- Optional -->
+<link rel="stylesheet" href="css/footer.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
+
 
 <header>
   <div class="wave-header">
@@ -28,12 +28,12 @@
     </svg>
   </div>
 
-  <a href="../html/index.html" class="logo"><span class="highlight">Your</span>Outlet</a>
+  <a href="index.html" class="logo"><span class="highlight">Your</span>Outlet</a>
 
   <nav class="nav-icons">
-    <a href="../html/about.html">About</a>
-    <a href="../html/contact.html">Contact</a>
-    <a href="../html/others.html">Others</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="others.html">Others</a>
 
     <div class="search-container">
       <input type="text" class="search-input" placeholder="Search...">
@@ -41,41 +41,35 @@
     </div>
 
     <a class="nav-icon-link" onclick="handleLoginClick()">
-      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Login" class="nav-icon">
-      <span class="nav-underline"></span>
-    </a>
+  <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Login" class="nav-icon">
+  <span class="nav-underline"></span>
+</a>
 
-    <a href="../html/cart.html" class="cart-icon-wrapper" id="cart-wrapper">
+    <a href="cart.html" class="cart-icon-wrapper" id="cart-wrapper">
       <img src="https://cdn-icons-png.flaticon.com/512/126/126515.png" alt="Cart" class="nav-icon" id="cart-icon">
       <span id="cart-count">0</span>
     </a>
   </nav>
 </header>
 
-<div class="category-background-text">PANTS</div>
+
+<div class="category-background-text">SHOES</div>
+
 
 <section class="product-grid">
-
   <div class="product-card">
-    <img src="../images/nike-shoes.jpg" alt="Nike Shoes">
-      <h2>Nike Airmax</h2>
-      <p class="price">$99.99</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
+    <img src="images/nike-airmax.jpg" alt="Nike Airmax">
+    <h2>Nike Airmax</h2>
+    <p>$99.99</p>
+    <button>Add to Cart</button>
   </div>
-
   <div class="product-card">
-    <img src="../images/adidas-shoes.jpg" alt="Adidas Shoes">
-    <div class="product-info">
-      <h2>Adidas Shoes</h2>
-      <p class="price">$89.99</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
+    <img src="images/adidas-shoes.jpg" alt="Adidas Shoes">
+    <h2>Adidas Shoes</h2>
+    <p>$89.99</p>
+    <button>Add to Cart</button>
   </div>
-
 </section>
-
-
 <!-- Login Modal -->
 <div id="loginModal" class="modal">
   <div class="modal-content">
@@ -98,6 +92,6 @@
   </div>
 </div>
 
-<script src="../js/app.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
