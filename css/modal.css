@@ -1,0 +1,95 @@
+.modal {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none; /* Hidden by default */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.social-icons button {
+  margin: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+}
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-content label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.modal-content .continue-btn {
+  width: 90%;
+  background: #2ec4b6;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-content .forgot-password {
+  display: block;
+  text-align: right;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #2ec4b6;
+  text-decoration: none;
+}

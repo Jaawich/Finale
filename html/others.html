@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>FAQ & Info - YourOutlet</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/waves.css">
+  <link rel="stylesheet" href="../css/others.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/search.css">
+<link rel="stylesheet" href="../css/animation.css">
+<link rel="stylesheet" href="../css/misc.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wave-header">
+    <svg class="wave" viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path d="M0,80 C360,150 1080,0 1440,80 L1440,0 L0,0 Z"></path>
+    </svg>
+  </div>
+
+  <header>
+    <a href="index.html" class="logo"><span class="highlight">Your</span>Outlet</a>
+    <nav class="nav-icons">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="others.html">Others</a>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Search" class="nav-icon search-icon">
+      </div>
+      <a class="nav-icon-link" onclick="handleLoginClick()">
+  <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Login" class="nav-icon">
+  <span class="nav-underline"></span>
+</a>
+
+      <a href="cart.html" class="cart-icon-wrapper" id="cart-wrapper">
+        <img src="https://cdn-icons-png.flaticon.com/512/126/126515.png" alt="Cart" class="nav-icon" id="cart-icon">
+        <span id="cart-count">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="others-main">
+    <section class="faq">
+      <h1>Frequently Asked Questions</h1>
+
+      <h3>💳 What payment methods do you accept?</h3>
+      <p>We currently accept:</p>
+      <ul>
+        <li>• Visa Card</li>
+        <li>• Wish Payment</li>
+        <li>• Cash on Delivery (available in Lebanon)</li>
+      </ul>
+
+      <h3>↩️ What’s your return policy?</h3>
+      <p>You can return unused items within 14 days of receiving your order. Contact us first to arrange pickup or drop-off.</p>
+
+      <h3>🚚 Where do you ship?</h3>
+      <p>We ship all across Lebanon, with international shipping options available for select products.</p>
+    </section>
+  </main>
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeLogin()">&times;</button>
+    <h2>Your Benefits Await</h2>
+    <p>Log in or sign up (it’s free)</p>
+    <div class="social-icons">
+      <button><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></button>
+      <button><img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google" /></button>
+      <button><img src="https://cdn-icons-png.flaticon.com/512/888/888839.png" alt="Yahoo" /></button>
+    </div>
+    <label>
+      <input type="email" placeholder="Email Address *" />
+    </label>
+    <label>
+      <input type="password" placeholder="Password *" />
+    </label>
+    <label><input type="checkbox" checked /> Keep me logged in</label>
+    <button class="continue-btn" onclick="submitLogin()">Log In →</button>
+  </div>
+</div>
+  <footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 YourOutlet. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../html/about.html">About</a> |
+      <a href="../html/contact.html">Contact</a> |
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

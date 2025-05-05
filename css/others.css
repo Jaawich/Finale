@@ -1,0 +1,48 @@
+
+.others-main {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.faq h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2ec4b6;
+  margin-bottom: 30px;
+}
+
+.faq h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 25px;
+  color: #fdd835;
+}
+
+.faq p,
+.faq ul {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.faq ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.faq ul li {
+  margin-left: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.faq ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #2ec4b6;
+}

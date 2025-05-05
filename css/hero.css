@@ -1,0 +1,132 @@
+/* Hero Section - Desktop */
+
+.hero-full {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 120px);
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); /* Same as your site bg */
+}
+
+/* Category Block */
+.category-block {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 5px solid #203a43;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-origin: center center;
+}
+
+/* Hover Effect on Block */
+.category-block:hover {
+  transform: scale(1.05) rotate(-0.3deg);
+  z-index: 10;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Video Inside Block */
+.category-block video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: block;
+}
+
+/* Semi-transparent overlay (dark layer) */
+.category-block::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Text overlay */
+.category-text-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 4px 12px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+  transform: translateY(0);
+}
+
+/* Text overlay on hover */
+.category-block:hover .category-text-overlay {
+  color: #000;
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* ======== Mobile View ======== */
+@media (max-width: 768px) {
+  .hero-full {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+    height: auto !important;
+  }
+
+  .category-block {
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .category-block video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .category-text-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0;
+  background: none !important;
+  border-radius: 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+
+.category-text-overlay:focus,
+.category-text-overlay:active {
+  background: none !important;
+  outline: none;
+}
+
+
+
+}
+

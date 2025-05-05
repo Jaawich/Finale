@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - YourOutlet</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Your Benefits Await</h2>
+  <p>Log in or sign up (it’s free)</p>
+
+  <div class="social-icons">
+    <button><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></button>
+    <button><img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google" /></button>
+    <button><img src="https://cdn-icons-png.flaticon.com/512/888/888839.png" alt="Yahoo" /></button>
+  </div>
+
+  <form action="#" method="POST" style="margin-top:20px;">
+    <input type="email" placeholder="Email Address *" required>
+    <input type="password" placeholder="Password *" required>
+
+    <a href="#" class="forgot-password">Forgot password?</a>
+
+    <label>
+      <input type="checkbox" checked> Keep me logged in
+    </label>
+
+    <button type="submit" class="continue-btn" onclick="submitLogin()">Log In →</button>
+  </form>
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>
